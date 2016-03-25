@@ -1,4 +1,4 @@
-# stillness
+# Stillness
 Stillness is a minimal and clean Wordpress theme based on z2h.
 
 ### About
