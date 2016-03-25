@@ -1,6 +1,6 @@
 /*
 Theme Name: Stillness
-Theme URI: http://vhbelvadi.com/stillness/
+Theme URI: http://stillness.vhbelvadi.com/
 Author: V.H. Belvadi
 Author URI: http://vhbelvadi.com
 Description: Stillness is a oinimal and clean Wordpress theme based on Leo Babuta's work.
@@ -226,6 +226,12 @@ color: #555;
 	    padding: 3px;
 	}
 	img a { border: 0 }
+	.post img {
+margin: 50px auto 0 auto;
+display: block;
+width: 720px !important;
+height: auto !important;
+	}
 	p {
 	line-height: 35px;
 	margin: 20px 0 0 0;
