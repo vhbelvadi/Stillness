@@ -36,7 +36,7 @@ function register_my_menus() {
   register_nav_menus(
     array(
       'header-menu' => __( 'Main Menu' ),
-      ‘social-menu' => __( 'Social Menu' )
+      'social-menu' => __( 'Social Menu' )
     )
   );
 }
