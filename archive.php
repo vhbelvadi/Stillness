@@ -26,7 +26,7 @@ get_header(); ?>
 </div>
 
 <div class="subscribe"><?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?></div>
-<div class="footer"><?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?></div>
+<div class="footer"><?php wp_nav_menu( array( 'theme_location' => 'social-menu' ) ); ?></div>
 
 </div>  <!-- /end .container -->
 
