@@ -18,6 +18,8 @@
 
 
 	<?php wp_head(); ?>
+	
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/responsive-nav.css">
 
 </head>
 <body>
