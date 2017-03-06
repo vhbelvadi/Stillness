@@ -3,7 +3,7 @@ Theme Name: Stillness
 Theme URI: http://stillness.vhbelvadi.com/
 Author: V.H. Belvadi
 Author URI: http://vhbelvadi.com
-Description: Stillness is a oinimal and clean Wordpress theme based on Leo Babuta's work.
+Description: Stillness is a minimal and clean Wordpress theme based on Leo Babuta's work.
 Version: 1
 License: GNU GPL v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
@@ -683,10 +683,6 @@ ol.commentlist .comment-author{
 	.footer { display: none }
 }
 
-/*
-// Special menus 
-*/
-
 li.special a {
 	color: #fff;
 	background: #2caf65;
@@ -709,10 +705,6 @@ li.special a:hover {
 	-o-transition-duration: 1s;
 	transition-duration: 1s;
 }
-
-/*
-// Responsive main menu
-*/
 
 .menu-main-menu-container {
 width: 100%;
@@ -758,6 +750,15 @@ text-align: center;
 font-family: Karla;
 text-transform: uppercase;
 font-weight: bold;
+/*
+color: #fff;
+background: #777;
+padding: 2px 0;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+-o-border-radius: 20px;
+border-radius: 20px;
+*/
 }
 
 .menu-main-menu-container {
@@ -779,14 +780,19 @@ margin-top: -3em;
 padding-bottom: 3em;
 }
 
+/*
+.container {
+padding-right: 5%;
+}
+*/
+
 ul#menu-social-menu.menu {
 width: 100%;
+margin-top: -12px;
 }
 }
 
-/*
-// Getting rid of the admin bar
-*/
+/* Getting rid of the admin bar */
 #wpadminbar {
 display: none;
 }
