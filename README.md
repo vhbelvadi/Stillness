@@ -7,4 +7,4 @@ Years ago @leobabauta released the Zen Habits theme which I really liked for its
 ### Demo
 There is a demo site set up [here](http://stillness.vhbelvadi.com), installation instructions are available [here](http://vhbelvadi.com/stillness-theme#instructions), I can be found [here](http://vhbelvadi.com) and Leo Babauta should be somewhere [here](http://zenhabits.net).
 
-![Screenshot](http://stillness.vhbelvadi.com/wp-content/uploads/2016/03/screenshot.png)
+![Screenshot](https://github.com/vhbelvadi/Stillness/blob/master/screenshot.png)
