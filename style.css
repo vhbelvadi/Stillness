@@ -405,6 +405,10 @@ text-align: center;
 height: 10vh;
 margin: 0 auto;
 bottom: 0px;
+}
+
+@media (min-width: 40em) {
+.footer {
 background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 65%, rgba(255, 255, 255, 1) 99%);
 /* FF3.6-15 */
 background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 65%, rgba(255, 255, 255, 1) 99%);
@@ -413,6 +417,7 @@ background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255,
 /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=0 );
 /* IE6-9 */
+}
 }
 .subscribe {
 text-align: center;
@@ -678,7 +683,110 @@ ol.commentlist .comment-author{
 	.footer { display: none }
 }
 
-/* Getting rid of the admin bar */
+/*
+// Special menus 
+*/
+
+li.special a {
+	color: #fff;
+	background: #2caf65;
+	padding: 2px 5px 2.5px 7px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+li.special a:hover {
+	color: #fff;
+	background: #23a7ff;
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+/*
+// Responsive main menu
+*/
+
+.menu-main-menu-container {
+width: 100%;
+position: fixed !important;
+bottom: 0px;
+padding: 100px 0 20px;
+background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.01) 1%, rgba(255, 255, 255, 1) 100%);
+background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.01) 1%, rgba(255, 255, 255, 1) 100%);
+background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.01) 1%, rgba(255, 255, 255, 1) 100%);
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=0 );
+}
+
+.nav-collapse ul {
+width: 91.5%;
+}
+
+.nav-collapse li {
+margin: 1em 0;
+}
+
+@media (min-width: 40em) {
+.nav-collapse li {
+width: auto !important;
+display: inline-block !important;
+margin: 0 1em;
+}
+
+.nav-collapse ul {
+width: 720px !important;
+}
+
+.menu-main-menu-container {
+position: fixed !important;
+}
+}
+
+@media screen and (max-width: 40em) {
+a.nav-toggle {
+margin: 0 auto 15vh auto;
+display: block;
+width: 100px;
+text-align: center;
+font-family: Karla;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+.menu-main-menu-container {
+position: fixed !important;
+width: 91.5%;
+bottom: 0px;
+display: block;
+margin-bottom: -10px;
+padding: 0px 0 20px;
+background: transparent;
+}
+
+h1.blog-title {
+padding-bottom: 2em;
+}
+
+a.nav-toggle.active {
+margin-top: -3em;
+padding-bottom: 3em;
+}
+
+ul#menu-social-menu.menu {
+width: 100%;
+}
+}
+
+/*
+// Getting rid of the admin bar
+*/
 #wpadminbar {
 display: none;
 }
