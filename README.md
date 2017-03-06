@@ -10,5 +10,5 @@ There is a demo site set up [here](http://stillness.vhbelvadi.com), installation
 ![Screenshot](https://github.com/vhbelvadi/Stillness/blob/master/screenshot.png)
 
 ### To-do and other notes
-1. Secondary menu is not responsive and will probably never be.
-2. Responsive menu has fixed positioning on mobile devices. Most users will never notice this, so it's not exactly a high priority issue.
+1. -Secondary menu is not responsive and will probably never be.- Both menus are now responsive.
+2. Responsive main menu (only, not the secondary "social" menu) has fixed positioning on mobile devices. Most users will never notice this, so it's not exactly a high priority issue.
