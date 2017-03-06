@@ -21,6 +21,20 @@ function stillness_register_theme_customizer( $wp_customize ) {
     );
  
 }
+
+add_action('wp_enqueue_scripts', 'wpdocs_scripts_method');
+ 
+/*
+ * Enqueue a script with the correct path.
+ */
+function wpdocs_scripts_method() {
+    wp_enqueue_script(
+        'custom_script',
+        get_template_directory_uri() . '/responsive-nav.min.js',
+        array('jquery')
+    );
+}
+
 add_action( 'customize_register', 'stillness_register_theme_customizer' );
 
 function stillness_customizer_css() {
