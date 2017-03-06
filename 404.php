@@ -4,7 +4,7 @@
 
 		
 			<center>
-			<p>our search is lonely</p>
+			<p>Our search is lonely</p>
 
 			<p>a footprint left in pure snow</p>
 
