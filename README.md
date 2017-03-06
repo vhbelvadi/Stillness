@@ -8,3 +8,7 @@ Years ago @leobabauta released the Zen Habits theme which I really liked for its
 There is a demo site set up [here](http://stillness.vhbelvadi.com), installation instructions are available [here](http://vhbelvadi.com/stillness-theme#instructions), I can be found [here](http://vhbelvadi.com) and Leo Babauta should be somewhere [here](http://zenhabits.net).
 
 ![Screenshot](https://github.com/vhbelvadi/Stillness/blob/master/screenshot.png)
+
+### To-do and other notes
+1. Secondary menu is not responsive and will probably never be.
+2. Responsive menu has fixed positioning on mobile devices. Most users will never notice this, so it's not exactly a high priority issue.
