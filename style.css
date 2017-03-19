@@ -4,7 +4,7 @@ Theme URI: http://stillness.vhbelvadi.com/
 Author: V.H. Belvadi
 Author URI: http://vhbelvadi.com
 Description: Stillness is a minimal and clean Wordpress theme based on Leo Babuta's work.
-Version: 1
+Version: 2.1
 License: GNU GPL v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
 */
@@ -226,11 +226,37 @@ color: #555;
 	    padding: 3px;
 	}
 	img a { border: 0 }
+	.alignnone {
+		max-width: 100%;
+	}
+	.alignleft {
+	width: 310px;
+display: inline-block;
+float: left;
+margin-right: 5%;
+}
+.alignright {
+max-width: 310px;
+float: right;
+margin: 10px 0 20px 5% !important;
+display: inline-block !important;
+}
+.aligncenter {
+max-width: 100%;
+}
 	.post img {
-margin: 50px auto 0 auto;
 display: block;
-width: 720px !important;
+margin: 2em 0 0 0;
+width: 100% !important;
 height: auto !important;
+	}
+	p.wp-caption-text, p.wp-caption-text:first-of-type {
+font-size: .85em;
+color: #999;
+font-weight: 500;
+margin: 5px 0 2em 0;
+text-indent: 0px !important;
+line-height: 1.2;
 	}
 	p {
 	line-height: 35px;
@@ -315,6 +341,15 @@ list-style-type: disc;
 	    color: #555;
 	}
 	.post li strong { font-weight: bold }
+	/* .post p em strong, .post p strong em, .post p b i, .post p i b {
+		background: #ffe631;
+		background: #fffd5f;
+		padding: 0 5px;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		-o-border-radius: 4px;
+		border-radius: 4px;
+	} */
 	.post blockquote {
 border-left: 0px solid #a5abab;
 margin: 1.8em 0em;
@@ -323,6 +358,20 @@ color: #555;
 font-size: 18px;
 font-family: 'Karla', Helvetica, sans-serif;
 background: #eee;
+	}
+	.post blockquote p, .post blockquote p:first-of-type {
+		font-size: 1.55em;
+		text-indent: 0px !important;
+		letter-spacing: -1px;
+	}
+	.post blockquote p strong em, .post blockquote p em strong, .post blockquote p b i, .post blockquote p i b, {
+		font-size: .6em;
+		letter-spacing: .035em;
+		text-transform: lowercase;
+		font-variant: small-caps;
+		background: transparent;
+		padding: 0px;
+		font-weight: normal;
 	}
 	/* line at bottom of post */
 	.home_bottom {
@@ -475,31 +524,47 @@ letter-spacing: 0px;
 }
 input, input:focus {
 border: 0px;
-border-bottom: 1px solid #bbb;
+border-bottom: 3px solid #ddd;
+cursor: pointer;
 margin-top: 25px;
 outline: none;
-font-family: 'Karla',Helvetica,Arial,sans-serif;
+font-family: 'Karla', Helvetica, Arial, sans-serif;
+background: #ddd;
 font-size: 18px;
 height: 25px !important;
-color: #555;
+color: #999;
+font-weight: bold;
+letter-spacing: -1px;
+border-radius: 3px;
 }
 
 ol.commentlist{
 	margin: 10px 5px;
 	padding: 10px;
 }
+ul.children {
+margin-left: 10%;
+}
+cite.fn a {
+	font-size: 112%;
+}
 .commentlist .comment-body{
-	padding: 10px;
-	background: #EFEFEF;
-	border: solid thin #DEDEDE;
+	padding: 25px;
+	background: #f2f2f2;
+	border: solid thin #f2f2f2;
 	margin: 10px 0;
 	position: relative;
 }
 .comment-body a.comment-reply-link{
 	position: absolute;
-	top: 10px;
-	right: 10px;
-	color: #AEAEAE;
+	top: 0;
+	right: 0;
+	background: #ddd;
+	color: #999;
+	font-size: 80%;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	padding: 5px;
 }
 ol.commentlist li{
 	list-style: none;
@@ -510,7 +575,7 @@ ol.commentlist img.avatar{
 	border: solid thin #CECECE;
 	float: left;
 	display: block;
-	margin: 15px;
+	margin: 0 15px 0 0;
 	width: 32px;
 	height: 32px;
 }
@@ -528,6 +593,8 @@ ol.commentlist .comment-author{
 }
 .comment-body p{
 	margin: 5px;
+	line-height: 1.5;
+	margin-top: 10px;
 }
  
 .comment-body .comment-author.vcard{
@@ -742,6 +809,10 @@ position: fixed !important;
 }
 
 @media screen and (max-width: 40em) {
+.container {
+width: 90%;
+}
+
 a.nav-toggle {
 margin: 0 auto 15vh auto;
 display: block;
@@ -789,6 +860,13 @@ padding-right: 5%;
 ul#menu-social-menu.menu {
 width: 100%;
 margin-top: -12px;
+}
+img {
+padding: 0px;
+}
+.aligncenter, .alignnone, .alignright, .alignleft {
+display: block;
+width: 100% !important;
 }
 }
 
