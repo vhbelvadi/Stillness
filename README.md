@@ -11,6 +11,22 @@ Also used in version 2.0 of this theme is responsive-nav.js by @viljamis which c
 
 ![Screenshot](https://github.com/vhbelvadi/Stillness/blob/master/screenshot.png)
 
+### Changelog
+#### v2.1
+- Responsive image fixes
+- Improved image styling, alignment and captioning
+- Updated version number on the WP dashboard
+- Improved blockquote styling
+- Improved comments area
+- Corrected errors with responsiveness of the archive page menu
+- General maintenance updates
+
+#### v2
+- All new, responsive menus
+
+#### v1
+- Initial release
+
 ### To-do and other notes
 1. ~~Secondary menu is not responsive and will probably never be.~~ Both menus are now responsive.
 2. Responsive main menu (only, not the secondary "social" menu) has fixed positioning on mobile devices. Most users will never notice this, so it's not exactly a high priority issue.
